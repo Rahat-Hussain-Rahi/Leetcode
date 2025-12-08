@@ -17,6 +17,7 @@ int countTriples(int n)
         }
     }
     return count;
+    
 }
 int main() 
 {
