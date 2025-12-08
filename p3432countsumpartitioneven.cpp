@@ -43,7 +43,7 @@ using namespace std;
             for(int  j=i+1;j<size;++j){
                 sum2+=nums[j];
             }
-            if((sum1-sum2)%2==0)
+            if((sum1-sum2)%2!=0)
             {
                 ++count;
             }
@@ -54,7 +54,7 @@ using namespace std;
 }
 int main()
 {
-    vector<int>nums={10,10,3,7,6};
+    vector<int>nums={10,1,3,7,6};
     cout<<countPartitions(nums);
     return 0;
 }
