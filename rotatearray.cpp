@@ -6,6 +6,7 @@ void rotate1(vector<int> &nums, int k)
     //O(n*k)
     int i{1};
     int len = nums.size();
+    k%=len;
     while (i <= k)
     {
         int last = nums[len - 1];
