@@ -1,5 +1,14 @@
 #include"p1800.cpp"
 #include<stack>
+class Node
+{
+    public:
+    int val;
+    Node* next;
+    
+    Node(int m_val,Node* ptr=nullptr):val{m_val},next{ptr}{}
+    Node* reverseList(Node*);
+};
 Node* reverseList(Node* head) 
     {
         stack<int> arr;
